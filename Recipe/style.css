@@ -1,0 +1,145 @@
+/* Clearfix */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: black;
+  text-shadow: -1px 0 1px rgb(144, 195, 212), 0 1px 1px rgb(144, 195, 212), 1px 0 1px rgb(144, 195, 212), 0 -1px 1px rgb(144, 195, 212);
+}
+
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+  padding: 0;
+  box-shadow: 5px 5px 15px #000;
+  font-family: 'Roboto', sans-serif;
+  background: rgba(144, 195, 212, 0.25);
+}
+header {
+  margin-top: 15px;
+  padding-top: 5px;
+
+}
+
+header div{
+  width: 640px;
+  background: teal url('images/plated.jpg') center center no-repeat;
+  border-radius: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 10px auto 10px auto;
+}
+header h1, header h2, header h3 {
+  color: white;
+  text-shadow: -1px 0 1px black, 0 1px 1px black, 1px 0 1px black, 0 -1px 1px black;
+}
+
+header::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 50%;
+  margin: 20px auto;
+  background: #000;
+}
+
+section::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 80%;
+  margin: 10px auto 0 auto;
+  background: #000;
+}
+
+section:last-of-type::after {
+  content: "";
+  display: block;
+  height: 0px;
+  background: #f00;
+}
+
+main h2, main h3 {
+  transition: 1s;
+}
+
+main h2:hover, main h3:hover {
+  transform: scale(1.5) rotate(360deg);
+}
+
+section.ingredients {
+  width: 60%;
+  margin: 0 auto;
+}
+
+
+.ingredients .vegetables {
+  float: left;
+  width: 45%;
+}
+
+.ingredients .pesto {
+  float: left;
+  width: 45%;
+  padding-left: 30px;
+}
+
+.directions button {
+  display: block;
+  margin: 0 auto;
+  padding: 2px 10px 2px 10px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  background-color: rgb(144, 195, 212);
+}
+
+.directions ol {
+  list-style-type: none;
+}
+
+.directions ol li {
+  padding: 15px;
+  list-style-type: none;
+}
+
+.directions ol li p{
+  padding: 15px;
+}
+
+.directions ol li ul li {
+  padding: 5px;
+  float: left;
+}
+
+.directions ol li div{
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.directions ol li span{
+    width: 60%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.directions div span.imageSpan {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.directions img {
+  width: 40%;
+  height: auto;
+  margin-left: 10em;
+  border: 2px solid grey;
+  border-radius: 15px;
+}
+
+.directions i {
+  visibility: hidden;
+  text-indent: -2em;
+}
